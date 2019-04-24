@@ -6,7 +6,7 @@
 
 采用的是单场景的方式，整个游戏只有一个场景game.fire.
 
-core目录下
+GameRoot    管理游戏核心模块 包括 EventCenter Timer SoundManager TableProvider ResourceLoader UIManager StageManager
 			
 EventCenter 事件的分发与监听（需要在EventTypes中定义）
 			接口： on监听事件 off取消监听 dispatchEvent事件派发 once监听一次（仿照的是cocos的api）
@@ -20,5 +20,3 @@ SoundManager	声音管理器
 TableProvider	数据表管理
 			接口：loadAllTables加载所有数据表 getTable获取表 getData获取数据
 
-
-GameRoot    管理游戏核心模块 包括 EventCenter Timer SoundManager TableProvider ResourceLoader UIManager StageManager
